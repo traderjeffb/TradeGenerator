@@ -18,3 +18,5 @@ C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGener
 C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Data\obj\Debug\TradeGenerator.Data.csproj.GenerateResource.cache
 C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Data\obj\Debug\TradeGenerator.Data.Migrations.initialMigratio.resources
 C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Data\obj\Debug\TradeGenerator.Data.Migrations.changedNam.resources
+C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Data\obj\Debug\TradeGenerator.Data.Migrations.addedOwnerId.resources
+C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Data\obj\Debug\TradeGenerator.Data.Migrations.ResolvingError.resources

@@ -14,3 +14,9 @@ C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGener
 C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Services\obj\Debug\TradeGenerator.Services.csproj.CopyComplete
 C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Services\obj\Debug\TradeGenerator.Services.dll
 C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Services\obj\Debug\TradeGenerator.Services.pdb
+C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Services\bin\Debug\TradeGenerator.Data.dll
+C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Services\bin\Debug\TradeGenerator.Models.dll
+C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Services\bin\Debug\TradeGenerator.Data.pdb
+C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Services\bin\Debug\TradeGenerator.Data.dll.config
+C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Services\bin\Debug\TradeGenerator.Models.pdb
+C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Services\bin\Debug\TradeGenerator.Models.dll.config

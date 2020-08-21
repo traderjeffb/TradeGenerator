@@ -67,6 +67,14 @@
     <Compile Include="Migrations\202008211802263_changedNam.Designer.cs">
       <DependentUpon>202008211802263_changedNam.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202008211919084_addedOwnerId.cs" />
+    <Compile Include="Migrations\202008211919084_addedOwnerId.Designer.cs">
+      <DependentUpon>202008211919084_addedOwnerId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202008211939480_ResolvingError.cs" />
+    <Compile Include="Migrations\202008211939480_ResolvingError.Designer.cs">
+      <DependentUpon>202008211939480_ResolvingError.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Stock.cs" />
@@ -84,6 +92,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202008211802263_changedNam.resx">
       <DependentUpon>202008211802263_changedNam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202008211919084_addedOwnerId.resx">
+      <DependentUpon>202008211919084_addedOwnerId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202008211939480_ResolvingError.resx">
+      <DependentUpon>202008211939480_ResolvingError.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

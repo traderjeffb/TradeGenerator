@@ -55,10 +55,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StockService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TradeGenerator.Data\TradeGenerator.Data.csproj">
+      <Project>{3b806101-5607-41b7-bc34-7ee00a8622d1}</Project>
+      <Name>TradeGenerator.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TradeGenerator.Models\TradeGenerator.Models.csproj">
+      <Project>{b147ea5f-a975-4d9f-9749-ded18d20fe98}</Project>
+      <Name>TradeGenerator.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

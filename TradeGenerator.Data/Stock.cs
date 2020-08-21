@@ -12,6 +12,8 @@ namespace TradeGenerator.Data
         [Key]
         [Required]
         public int TickerId { get; set; }
+        [Required]
+        public Guid OwnerId { get; set; }
         public string Ticker { get; set; }
         [Required]
         public DateTime Date { get; set; }
