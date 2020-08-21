@@ -31,7 +31,7 @@ namespace TradeGenerator.Data
         {
             return new ApplicationDbContext();
         }
-        public DbSet<Trade> Trades { get; set; }
+        public DbSet<Stock> Stocks { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder
