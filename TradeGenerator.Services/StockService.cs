@@ -60,6 +60,27 @@ namespace TradeGenerator.Services
             }
         }
 
+        public StockDetail GetStockById(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Stocks
+                        .Single(e => e.TickerId == id && e.OwnerId == _userId);
+                return
+                    new StockDetail
+                    {
+                        TickerId = entity.TickerId,
+                        Ticker = entity.Ticker,
+                        Date = entity.Date,
+                        High = entity.High,
+                        Low = entity.Low,
+                        Close = entity.Close
+                    };
+            }
+        }
+
     }
 
 

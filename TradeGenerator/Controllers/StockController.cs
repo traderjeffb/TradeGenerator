@@ -53,5 +53,13 @@ namespace TradeGenerator.Controllers
             var service = new StockService(userId);
             return service;
         }
+
+        public ActionResult Details(int id)
+        {
+            var svc = CreateStockService();
+            var model = svc.GetStockById(id);
+
+            return View(model);
+        }
     }
 }

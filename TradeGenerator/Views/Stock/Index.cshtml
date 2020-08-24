@@ -35,22 +35,22 @@
 
     @foreach (var item in Model)
     {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Ticker)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Close)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Date)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
-        </tr>
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Ticker)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Close)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Date)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.Ticker }) |
+        @Html.ActionLink("Details", "Details", new { id = item.Ticker }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.Ticker })
+    </td>
+</tr>
     }
 
 </table>
