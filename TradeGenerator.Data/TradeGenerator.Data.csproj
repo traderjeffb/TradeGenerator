@@ -55,25 +55,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IdentityModels.cs" />
-    <Compile Include="Migrations\202008211645339_InitialCreate.cs" />
-    <Compile Include="Migrations\202008211645339_InitialCreate.Designer.cs">
-      <DependentUpon>202008211645339_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008211700403_initialMigratio.cs" />
-    <Compile Include="Migrations\202008211700403_initialMigratio.Designer.cs">
-      <DependentUpon>202008211700403_initialMigratio.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008211802263_changedNam.cs" />
-    <Compile Include="Migrations\202008211802263_changedNam.Designer.cs">
-      <DependentUpon>202008211802263_changedNam.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008211919084_addedOwnerId.cs" />
-    <Compile Include="Migrations\202008211919084_addedOwnerId.Designer.cs">
-      <DependentUpon>202008211919084_addedOwnerId.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008211939480_ResolvingError.cs" />
-    <Compile Include="Migrations\202008211939480_ResolvingError.Designer.cs">
-      <DependentUpon>202008211939480_ResolvingError.cs</DependentUpon>
+    <Compile Include="Migrations\202008212005393_initialMigration.cs" />
+    <Compile Include="Migrations\202008212005393_initialMigration.Designer.cs">
+      <DependentUpon>202008212005393_initialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,20 +68,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202008211645339_InitialCreate.resx">
-      <DependentUpon>202008211645339_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008211700403_initialMigratio.resx">
-      <DependentUpon>202008211700403_initialMigratio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008211802263_changedNam.resx">
-      <DependentUpon>202008211802263_changedNam.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008211919084_addedOwnerId.resx">
-      <DependentUpon>202008211919084_addedOwnerId.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008211939480_ResolvingError.resx">
-      <DependentUpon>202008211939480_ResolvingError.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202008212005393_initialMigration.resx">
+      <DependentUpon>202008212005393_initialMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

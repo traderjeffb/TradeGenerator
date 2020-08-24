@@ -10,7 +10,6 @@ namespace TradeGenerator.Data.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "TradeGenerator.Data.ApplicationDbContext";
         }
 
         protected override void Seed(TradeGenerator.Data.ApplicationDbContext context)

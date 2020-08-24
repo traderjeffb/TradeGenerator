@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using TradeGenerator.Models;
+using TradeGenerator.Services;
 
 namespace TradeGenerator.Controllers
 {
@@ -13,7 +15,10 @@ namespace TradeGenerator.Controllers
         // GET: Trade
         public ActionResult Index()
         {
-            var model = new StockListItem[0];
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new StockService(userId);
+            var model = service.GetStocks();
+
             return View(model);
         }
 
@@ -23,16 +28,30 @@ namespace TradeGenerator.Controllers
             return View();
         }
 
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(StockCreate model)
         {
-            if (ModelState.IsValid)
-            {
+            if (!ModelState.IsValid) return View(model);
 
-            }
+            var service = CreateStockService();
+
+            if (service.CreateStock(model))
+            {
+                TempData["SaveResult"] = "Your Stock was created.";
+                return RedirectToAction("Index");
+            };
+
+            ModelState.AddModelError("", "Stock could not be created.");
+
             return View(model);
+        }
+
+        private StockService CreateStockService()
+        {
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new StockService(userId);
+            return service;
         }
     }
 }

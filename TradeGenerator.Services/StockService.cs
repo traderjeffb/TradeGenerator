@@ -8,7 +8,7 @@ using TradeGenerator.Models;
 
 namespace TradeGenerator.Services
 {
-    class StockService
+    public class StockService
     {
         private readonly Guid _userId;
 
@@ -22,6 +22,7 @@ namespace TradeGenerator.Services
             var entity =
                 new Stock()
                 {
+                   TickerId = model.TickerId,
                     OwnerId = _userId,
                     Ticker = model.Ticker,
                     Date = model.Date,
@@ -37,7 +38,7 @@ namespace TradeGenerator.Services
             }
         }
 
-        public IEnumerable<StockListItem> GetNotes()
+        public IEnumerable<StockListItem> GetStocks()
         {
             using (var ctx = new ApplicationDbContext())
             {
@@ -49,7 +50,6 @@ namespace TradeGenerator.Services
                             e =>
                                 new StockListItem
                                 {
-                                    //StockId = e
                                     Ticker = e.Ticker,
                                     Close = e.Close,
                                     Date = e.Date,
