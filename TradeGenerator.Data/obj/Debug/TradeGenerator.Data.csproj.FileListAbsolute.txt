@@ -9,10 +9,10 @@ C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGener
 C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Data\bin\Debug\EntityFramework.SqlServer.xml
 C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Data\obj\Debug\TradeGenerator.Data.csprojAssemblyReference.cache
 C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Data\obj\Debug\TradeGenerator.Data.csproj.CoreCompileInputs.cache
 C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Data\obj\Debug\TradeGenerator.Data.csproj.CopyComplete
 C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Data\obj\Debug\TradeGenerator.Data.dll
 C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Data\obj\Debug\TradeGenerator.Data.pdb
-C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Data\obj\Debug\TradeGenerator.Data.Migrations.initialMigration.resources
+C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Data\obj\Debug\TradeGenerator.Data.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Data\obj\Debug\TradeGenerator.Data.Migrations.tryingToGit.resources
 C:\ElevenFiftyProjects\RedBadge\StockMarket\StockMarketTradeGenerator\TradeGenerator.Data\obj\Debug\TradeGenerator.Data.csproj.GenerateResource.cache

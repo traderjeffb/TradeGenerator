@@ -8,7 +8,8 @@ namespace TradeGenerator.Models
 {
     public class StockListItem   
     {
-        public int StockId { get; set; }
+        public Guid OwnerId { get; set; }
+        public int TickerId { get; set; }
         public string Ticker { get; set;}
         public decimal Close { get; set; }
         public DateTime Date { get; set; }

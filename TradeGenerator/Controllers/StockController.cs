@@ -57,9 +57,72 @@ namespace TradeGenerator.Controllers
         public ActionResult Details(int id)
         {
             var svc = CreateStockService();
+            //var model = svc.GetStockById(id);
             var model = svc.GetStockById(id);
 
             return View(model);
+        }
+
+        public ActionResult Edit(int id)
+        {
+            var service = CreateStockService();
+            var detail = service.GetStockById(id);
+            var model =
+                new StockEdit
+                {
+                    TickerId = detail.TickerId,
+                    High = detail.High,
+                    Low = detail.Low,
+                    Close = detail.Close,
+                };
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(int id, StockEdit model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            if (model.TickerId != id)
+            {
+                ModelState.AddModelError("", "Id Mismatch");
+                return View(model);
+            }
+
+            var service = CreateStockService();
+
+            if (service.UpdateStock(model))
+            {
+                TempData["SaveResult"] = "Your note was updated.";
+                return RedirectToAction("Index");
+            }
+
+            ModelState.AddModelError("", "Your note could not be updated.");
+            return View(model);
+        }
+
+        [ActionName("Delete")]
+        public ActionResult Delete(int id)
+        {
+            var svc = CreateStockService();
+            var model = svc.GetStockById(id);
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeletePost(int id)
+        {
+            var service = CreateStockService();
+
+            service.DeleteStock(id);
+
+            TempData["SaveResult"] = "Your note was deleted";
+
+            return RedirectToAction("Index");
         }
     }
 }

@@ -54,7 +54,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OurAccountService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StockComputations.cs" />
     <Compile Include="StockService.cs" />
   </ItemGroup>
   <ItemGroup>

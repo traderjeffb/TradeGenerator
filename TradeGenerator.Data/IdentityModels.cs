@@ -32,6 +32,7 @@ namespace TradeGenerator.Data
             return new ApplicationDbContext();
         }
         public DbSet<Stock> Stocks { get; set; }
+        public DbSet<OurAccount> OurAccounts { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder

@@ -29,10 +29,16 @@ namespace TradeGenerator.Services
                     High = model.High,
                     Low = model.Low,
                     Close = model.Close,
+                    MovingAvg1 = model.Close
+                    //MovingAvg2 = model.Close
+                    //totalcount
+                    //totalprice
+                    //movingAvg
                 };
 
             using (var ctx = new ApplicationDbContext())
             {
+
                 ctx.Stocks.Add(entity);
                 return ctx.SaveChanges() == 1;
             }
@@ -49,7 +55,8 @@ namespace TradeGenerator.Services
                         .Select(
                             e =>
                                 new StockListItem
-                                {
+                                {   
+                                    TickerId =e.TickerId,
                                     Ticker = e.Ticker,
                                     Close = e.Close,
                                     Date = e.Date,
@@ -67,10 +74,11 @@ namespace TradeGenerator.Services
                 var entity =
                     ctx
                         .Stocks
-                        .Single(e => e.TickerId == id && e.OwnerId == _userId);
+                        .Single(e => e.TickerId == id );
                 return
                     new StockDetail
                     {
+                        OwnerId = entity.OwnerId,
                         TickerId = entity.TickerId,
                         Ticker = entity.Ticker,
                         Date = entity.Date,
@@ -78,6 +86,41 @@ namespace TradeGenerator.Services
                         Low = entity.Low,
                         Close = entity.Close
                     };
+            }
+        }
+
+        public bool UpdateStock(StockEdit model)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Stocks
+                        .Single(e => e.TickerId == model.TickerId && e.OwnerId == _userId);
+
+                entity.TickerId = model.TickerId;
+                entity.Ticker = model.Ticker;
+                //entity.Date = model.Date;
+                entity.High = model.High;
+                entity.Low = model.Low;
+                entity.Close = model.Close;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
+        public bool DeleteStock(int tickerId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Stocks
+                        .Single(e => e.TickerId == tickerId && e.OwnerId == _userId);
+
+                ctx.Stocks.Remove(entity);
+
+                return ctx.SaveChanges() == 1;
             }
         }
 

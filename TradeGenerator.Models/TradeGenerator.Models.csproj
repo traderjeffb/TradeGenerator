@@ -54,9 +54,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OurAccountCreate.cs" />
+    <Compile Include="OurAccountDetail.cs" />
+    <Compile Include="OurAccountEdit.cs" />
+    <Compile Include="OurAccountListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StockCreate.cs" />
     <Compile Include="StockDetail.cs" />
+    <Compile Include="StockEdit.cs" />
     <Compile Include="StockListItem.cs" />
   </ItemGroup>
   <ItemGroup>
