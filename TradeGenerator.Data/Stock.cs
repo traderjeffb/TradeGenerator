@@ -15,12 +15,9 @@ namespace TradeGenerator.Data
         [Required]
         public int TickerId { get; set; }
 
-
-
         [Required]
         public Guid OwnerId { get; set; }
         public string Ticker { get; set; }
-
 
 
         [Required]
@@ -31,10 +28,10 @@ namespace TradeGenerator.Data
         [Required]
         public decimal Close { get; set; }
 
-        public decimal? MovingAvg1 { get; set; }
-        public decimal? MovingAvg2 { get; set; }
-        public decimal TotalPrices { get; set; }
-        public decimal TotalCount { get; set; }
+        //public decimal? MovingAvg1 { get; set; }
+        //public decimal? MovingAvg2 { get; set; }
+        //public decimal TotalPrices { get; set; }
+        //public decimal TotalCount { get; set; }
 
 
     }

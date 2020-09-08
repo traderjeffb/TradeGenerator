@@ -45,7 +45,7 @@ namespace TradeGenerator.Services
                 var query =
                     ctx
                         .OurAccounts
-                        .Where(e => e.OwnerId == _userId)
+                        .Where(e => e.OwnerId == _userId) // && e.AccountId == _accountId)
                         .Select(
                             e =>
                                 new OurAccountListItem

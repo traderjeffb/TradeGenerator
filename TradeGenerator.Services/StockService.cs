@@ -29,11 +29,8 @@ namespace TradeGenerator.Services
                     High = model.High,
                     Low = model.Low,
                     Close = model.Close,
-                    MovingAvg1 = model.Close
-                    //MovingAvg2 = model.Close
-                    //totalcount
-                    //totalprice
-                    //movingAvg
+                    //MovingAvg1 = model.Close
+
                 };
 
             using (var ctx = new ApplicationDbContext())
