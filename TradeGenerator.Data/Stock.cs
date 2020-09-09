@@ -28,10 +28,7 @@ namespace TradeGenerator.Data
         [Required]
         public decimal Close { get; set; }
 
-        //public decimal? MovingAvg1 { get; set; }
-        //public decimal? MovingAvg2 { get; set; }
-        //public decimal TotalPrices { get; set; }
-        //public decimal TotalCount { get; set; }
+
 
 
     }

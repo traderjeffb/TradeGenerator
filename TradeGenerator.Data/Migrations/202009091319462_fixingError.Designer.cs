@@ -7,13 +7,13 @@ namespace TradeGenerator.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.0-30225")]
-    public sealed partial class tryingToGit : IMigrationMetadata
+    public sealed partial class fixingError : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(tryingToGit));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(fixingError));
         
         string IMigrationMetadata.Id
         {
-            get { return "202009051721574_tryingToGit"; }
+            get { return "202009091319462_fixingError"; }
         }
         
         string IMigrationMetadata.Source

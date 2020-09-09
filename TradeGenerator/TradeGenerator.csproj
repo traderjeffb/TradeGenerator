@@ -181,6 +181,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\aspnet-TradeGenerator-20200820115904.mdf" />
+    <Content Include="App_Data\aspnet-TradeGenerator-20200820115904_log.ldf">
+      <DependentUpon>aspnet-TradeGenerator-20200820115904.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -248,9 +252,7 @@
     <Content Include="Views\OurAccount\Edit.cshtml" />
     <Content Include="Views\OurAccount\Delete.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

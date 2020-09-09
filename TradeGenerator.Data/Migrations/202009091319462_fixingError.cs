@@ -3,7 +3,7 @@ namespace TradeGenerator.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class tryingToGit : DbMigration
+    public partial class fixingError : DbMigration
     {
         public override void Up()
         {
@@ -38,10 +38,6 @@ namespace TradeGenerator.Data.Migrations
                         High = c.Decimal(nullable: false, precision: 18, scale: 2),
                         Low = c.Decimal(nullable: false, precision: 18, scale: 2),
                         Close = c.Decimal(nullable: false, precision: 18, scale: 2),
-                        MovingAvg1 = c.Decimal(precision: 18, scale: 2),
-                        MovingAvg2 = c.Decimal(precision: 18, scale: 2),
-                        TotalPrices = c.Decimal(nullable: false, precision: 18, scale: 2),
-                        TotalCount = c.Decimal(nullable: false, precision: 18, scale: 2),
                     })
                 .PrimaryKey(t => t.TickerId);
             

@@ -54,13 +54,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\202009051721574_tryingToGit.cs" />
-    <Compile Include="Migrations\202009051721574_tryingToGit.Designer.cs">
-      <DependentUpon>202009051721574_tryingToGit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202009081643510_cleanup.cs" />
-    <Compile Include="Migrations\202009081643510_cleanup.Designer.cs">
-      <DependentUpon>202009081643510_cleanup.cs</DependentUpon>
+    <Compile Include="Migrations\202009091319462_fixingError.cs" />
+    <Compile Include="Migrations\202009091319462_fixingError.Designer.cs">
+      <DependentUpon>202009091319462_fixingError.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="OurAccount.cs" />
@@ -73,11 +69,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202009051721574_tryingToGit.resx">
-      <DependentUpon>202009051721574_tryingToGit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202009081643510_cleanup.resx">
-      <DependentUpon>202009081643510_cleanup.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202009091319462_fixingError.resx">
+      <DependentUpon>202009091319462_fixingError.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
